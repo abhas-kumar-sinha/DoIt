@@ -9,6 +9,7 @@
     --list-bg: white;
     --primary-text: black;
     --secondary-text: #a8aeb4;
+    --tertiary-text: #566257;
     --box-initial: #FBFDFC;
     --box-final: #EEF6EF;
     --border-color: #2b322b;
@@ -24,6 +25,7 @@
     --list-bg: #232323;
     --primary-text: white;
     --secondary-text: #6fc672;
+    --tertiary-text: white;
     --box-initial: #2f3630;
     --box-final: #2f3630;
     --border-color: #2b322b;

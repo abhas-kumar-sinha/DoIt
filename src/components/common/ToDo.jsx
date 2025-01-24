@@ -57,14 +57,14 @@ const ToDo = ({ setEditToDo }) => {
             </div>
         </div>
         <div className="w-full pb-7 px-6 h-auto bg-gradient-to-b from-[var(--box-initial)] to-[var(--box-final)] mt-1 border-y-2 border-[var(--border-color)]">
-            <div className="flex items-center text-base font-semibold justify-between h-36 text-[#5B665B]">
+            <div className="flex items-center text-base font-semibold justify-between h-36 text-[var(--tertiary-text)]">
                 Add a Task
             </div>
             <div className="flex w-full items-center justify-between">
                 <div className="flex items-center gap-7">
-                    <LuBell className="text-2xl text-[#1B281B] cursor-pointer" />
-                    <RxLoop className="text-2xl text-[#1B281B] cursor-pointer" />
-                    <LuCalendar className="text-2xl text-[#1B281B] cursor-pointer" />
+                    <LuBell className="text-2xl text-[var(--primary-text)] cursor-pointer" />
+                    <RxLoop className="text-2xl text-[var(--primary-text)] cursor-pointer" />
+                    <LuCalendar className="text-2xl text-[var(--primary-text)] cursor-pointer" />
                 </div>
 
                 <button className="bg-[var(--cta-color)] cursor-pointer font-semibold text-[var(--cta-text)] px-4 py-1.5 rounded-md hover:bg-[var(--cta-text)] hover:text-[var(--cta-color)] transition-all duration-200" >ADD TASK</button>
