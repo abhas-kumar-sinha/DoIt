@@ -43,8 +43,8 @@ const Sidebar = () => {
                 <img src={userPic} alt="user" className="w-full h-full object-cover" />
             </div>
             <p className="text-normal font-semibold">Hey, ABCD </p>
-            <ListContainer items={items} />
-            <ListContainer items={[{title: "Add list", icon: <FaPlus />}]} />
+            <ListContainer items={items} src="Sidebar" />
+            <ListContainer items={[{title: "Add list", icon: <FaPlus />}]} src="Sidebar" />
             <TodoTasks />
         </div>
     )}

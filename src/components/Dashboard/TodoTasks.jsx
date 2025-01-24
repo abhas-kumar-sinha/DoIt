@@ -2,7 +2,7 @@ import { MdInfo } from "react-icons/md";
 
 const TodatTasks = () => {
   return (
-    <div className="w-full h-[50vh] bg-white mt-4 p-4">
+    <div className="w-full h-5/5 bg-white mt-4 p-4">
         <div className="top">
             <div className="w-full flex items-center justify-between">
                 <p >Today Tasks</p>

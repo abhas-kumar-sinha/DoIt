@@ -2,11 +2,9 @@ import { FaCaretDown } from "react-icons/fa";
 import { LuBell, LuCalendar } from "react-icons/lu";
 import { RxLoop } from "react-icons/rx";
 import ToDoTasksList from "./ToDoTasksList";
-import { useAppContext } from "../../context/AppContext";
+import propType from "prop-types"
 
-const ToDo = () => {
-
-    const { editList, setEditList } = useAppContext()
+const ToDo = ({ setEditToDo }) => {
 
     const todoList = [
         {
@@ -59,7 +57,7 @@ const ToDo = () => {
             </div>
         </div>
         <div className="w-full pb-7 px-6 h-auto bg-gradient-to-b from-[#FBFDFC] to-[#EEF6EF] mt-1 border-y-2 border-[#D4E0D5]">
-            <div className="flex items-center text-base font-semibold justify-between h-[20vh] text-[#5B665B]">
+            <div className="flex items-center text-base font-semibold justify-between h-36 text-[#5B665B]">
                 Add a Task
             </div>
             <div className="flex w-full items-center justify-between">
@@ -69,13 +67,18 @@ const ToDo = () => {
                     <LuCalendar className="text-2xl text-[#1B281B] cursor-pointer" />
                 </div>
 
-                <button className="bg-[var(--cta-color)] cursor-pointer font-semibold text-[var(--cta-text)] px-4 py-1.5 rounded-md hover:bg-[var(--cta-text)] hover:text-[var(--cta-color)] transition-all duration-200" onClick={() => setEditList(!editList)}>ADD TASK</button>
+                <button className="bg-[var(--cta-color)] cursor-pointer font-semibold text-[var(--cta-text)] px-4 py-1.5 rounded-md hover:bg-[var(--cta-text)] hover:text-[var(--cta-color)] transition-all duration-200" >ADD TASK</button>
             </div>
         </div>
 
-        <ToDoTasksList value={todoList} completed={false} />
-        <ToDoTasksList value={completedList} completed={true} />
+        <ToDoTasksList value={todoList} setEditToDo={setEditToDo} completed={false} />
+        <ToDoTasksList value={completedList} setEditToDo={setEditToDo} completed={true} />
     </div>
   )
 }
+
+ToDo.propTypes = {
+    setEditToDo: propType.func.isRequired
+}
+
 export default ToDo;
