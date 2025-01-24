@@ -38,7 +38,7 @@ const Sidebar = () => {
   return (
     <>
     {menu && (
-        <div className={`bg-[var(--secondary-color)] transition-all duration-300 ease-in-out shrink-0 h-auto mt-[14vh] w-72 relative flex flex-col items-center px-5 py-20 ${editList ? "me-2" : "me-12"}`}>
+        <div className={`bg-[var(--secondary-color)] shrink-0 h-auto mt-[14vh] w-72 relative flex flex-col items-center px-5 py-20 ${editList ? "me-2" : "me-12"}`}>
             <div className="w-32 h-32 rounded-full absolute -top-[7%] left-[30%] overflow-hidden">
                 <img src={userPic} alt="user" className="w-full h-full object-cover" />
             </div>

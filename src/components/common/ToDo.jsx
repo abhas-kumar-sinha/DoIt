@@ -56,7 +56,7 @@ const ToDo = ({ setEditToDo }) => {
                 <FaCaretDown className="text-lg group-hover:text-[#1B281B] transition-all duration-200" />
             </div>
         </div>
-        <div className="w-full pb-7 px-6 h-auto bg-gradient-to-b from-[#FBFDFC] to-[#EEF6EF] mt-1 border-y-2 border-[#D4E0D5]">
+        <div className="w-full pb-7 px-6 h-auto bg-gradient-to-b from-[var(--box-initial)] to-[var(--box-final)] mt-1 border-y-2 border-[var(--border-color)]">
             <div className="flex items-center text-base font-semibold justify-between h-36 text-[#5B665B]">
                 Add a Task
             </div>

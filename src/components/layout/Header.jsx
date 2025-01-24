@@ -1,8 +1,9 @@
 import DoIt from "../../assets/DoIt.png"
 import { FiMenu, FiSearch } from "react-icons/fi";
-import { PiMoonStars, PiSquaresFour } from "react-icons/pi";
+import { PiSquaresFour } from "react-icons/pi";
 import { MdFormatListBulleted } from "react-icons/md";
 import { useAppContext } from "../../context/AppContext";
+import ThemeProvider from "../common/ThemeProvider";
 
 const Header = () => {
 
@@ -24,7 +25,8 @@ const Header = () => {
             {!showBlock ? 
             <PiSquaresFour size={24} className="cursor-pointer" onClick={() => setShowBlock(!showBlock)} /> 
             : <MdFormatListBulleted size={24} className="cursor-pointer" onClick={() => setShowBlock(!showBlock)} />}
-            <PiMoonStars size={24} className="cursor-pointer" />
+            
+            <ThemeProvider />
         </div>
     </div>
     </>
